@@ -11,5 +11,8 @@ $(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
+
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/mido/mido-vendor.mk)
