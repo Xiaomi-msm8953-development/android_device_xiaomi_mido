@@ -15,5 +15,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.goodix.sh \
+    init.device.rc
+
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/mido/mido-vendor.mk)
