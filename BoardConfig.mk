@@ -9,5 +9,8 @@
 
 DEVICE_PATH := device/xiaomi/mido
 
+# Kernel
+TARGET_KERNEL_CONFIG := mido_defconfig
+
 # Inherit the proprietary files
 -include vendor/xiaomi/mido/BoardConfigVendor.mk
