@@ -28,5 +28,8 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 872415232
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2020-01-01
 
+# Sepolicy
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Inherit the proprietary files
 -include vendor/xiaomi/mido/BoardConfigVendor.mk
