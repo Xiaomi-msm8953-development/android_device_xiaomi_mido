@@ -11,6 +11,7 @@ function blob_fixup() {
     # Remove goodix dependencies
     vendor/bin/gx_fpd)
         "${PATCHELF}" --remove-needed "fakelogprint.so" "${2}"
+        "${PATCHELF}" --remove-needed "libshims_gxfpd.so" "${2}"
         ;;
 
     vendor/lib64/hw/fingerprint.goodix.so)
