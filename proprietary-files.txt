@@ -604,10 +604,10 @@ vendor/etc/camera/s5k5e8_qtech_chromatix.xml
 vendor/etc/camera/s5k5e8_sunny_chromatix.xml
 
 # Fingerprint
-vendor/bin/gx_fpd
-vendor/lib64/hw/fingerprint.goodix.so
+vendor/bin/gx_fpd|2f052bbdb04e450a5eb0923261df5a5f3e6da371
+vendor/lib64/hw/fingerprint.goodix.so|ae3ead1539731d934c95948f15447f0619a3098c
 vendor/lib64/hw/fingerprint.searchf.so
-vendor/lib64/hw/gxfingerprint.default.so
+vendor/lib64/hw/gxfingerprint.default.so|b6fbbe229d1ac3f48ddcdd000e5f01247d5898db
 vendor/lib64/libfp_client.so
 vendor/lib64/libfpnav.so
 vendor/lib64/libfpservice.so
