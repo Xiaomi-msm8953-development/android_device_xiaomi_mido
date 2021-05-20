@@ -24,6 +24,11 @@ function blob_fixup() {
         "${PATCHELF}" --remove-needed "fakelogprint.so" "${2}"
         ;;
 
+    # Hax libmmcamera2_sensor_modules.so to load cam configs from vendor
+    vendor/lib/libmmcamera2_sensor_modules.so)
+        sed -i 's|/system/etc/camera|/vendor/etc/camera|g' "${2}"
+        ;;
+
     esac
 }
 
