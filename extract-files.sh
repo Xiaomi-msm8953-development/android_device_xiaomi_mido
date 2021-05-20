@@ -49,6 +49,10 @@ function blob_fixup() {
         "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
         ;;
 
+    vendor/lib/libmmcamera2_stats_modules.so)
+        sed -i 's|libandroid.so|libcamshim.so|g' "${2}"
+        ;;
+
     esac
 }
 
