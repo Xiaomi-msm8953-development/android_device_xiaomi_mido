@@ -608,6 +608,9 @@ vendor/etc/camera/s5k5e8_ofilm_chromatix.xml
 vendor/etc/camera/s5k5e8_qtech_chromatix.xml
 vendor/etc/camera/s5k5e8_sunny_chromatix.xml
 
+# Camera firmware - from Daisy 10/QKQ1.191002.002/V11.0.5.0.QDLMIXM
+vendor/firmware/cpp_firmware_v1_5_0.fw|ac19cd179b7b118bb3ea01a35fdfc78dc58164a1
+
 # Fingerprint
 vendor/bin/gx_fpd|2f052bbdb04e450a5eb0923261df5a5f3e6da371
 vendor/lib64/hw/fingerprint.goodix.so|ae3ead1539731d934c95948f15447f0619a3098c
