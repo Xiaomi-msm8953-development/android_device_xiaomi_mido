@@ -47,10 +47,17 @@ function blob_fixup() {
     # Camera shim
     vendor/lib/libmmcamera_ppeiscore.so)
         "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+        "${PATCHELF}" --remove-needed "libgui.so" "${2}"
         ;;
 
     vendor/lib/libmmcamera2_stats_modules.so)
         sed -i 's|libandroid.so|libcamshim.so|g' "${2}"
+        "${PATCHELF}" --remove-needed "libandroid.so" "${2}"
+        "${PATCHELF}" --remove-needed "libgui.so" "${2}"
+        ;;
+
+    vendor/lib/libmpbase.so)
+        "${PATCHELF}" --remove-needed "libandroid.so" "${2}"
         ;;
 
     esac
