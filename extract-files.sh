@@ -44,6 +44,11 @@ function blob_fixup() {
         sed -i 's|/data/misc/camera/|/data/vendor/qcam/|g' "${2}"
         ;;
 
+    # Camera shim
+    vendor/lib/libmmcamera_ppeiscore.so)
+        "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+        ;;
+
     esac
 }
 
