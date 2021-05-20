@@ -29,6 +29,11 @@ function blob_fixup() {
         sed -i 's|/system/etc/camera|/vendor/etc/camera|g' "${2}"
         ;;
 
+    # Hex edit libmmcamera_dbg.so
+    vendor/lib/libmmcamera_dbg.so)
+        sed -i 's|persist.camera.debug.logfile|persist.vendor.camera.dbglog|g' "${2}"
+        ;;
+
     esac
 }
 
