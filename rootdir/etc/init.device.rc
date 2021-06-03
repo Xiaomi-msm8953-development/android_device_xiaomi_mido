@@ -67,7 +67,7 @@ service vendor.goodix_script /vendor/bin/init.goodix.sh
     user root
     oneshot
 
-service netmgrd /system/bin/netmgrd
+service vendor.netmgrd /vendor/bin/netmgrd
     class main
     user root
     group root wifi wakelock radio inet
