@@ -69,7 +69,8 @@ service vendor.goodix_script /vendor/bin/init.goodix.sh
 
 service netmgrd /system/bin/netmgrd
     class main
-    group radio system wakelock
+    user root
+    group root wifi wakelock radio inet
 
 on post-fs-data
 #Create folder for mm-qcamera-daemon
