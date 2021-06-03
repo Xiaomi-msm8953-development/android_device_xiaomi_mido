@@ -71,6 +71,7 @@ service vendor.netmgrd /vendor/bin/netmgrd
     class main
     user root
     group root wifi wakelock radio inet
+    writepid /dev/cpuset/system-background/tasks
 
 on post-fs-data
 #Create folder for mm-qcamera-daemon
