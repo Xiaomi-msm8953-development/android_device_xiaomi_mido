@@ -32,6 +32,11 @@ PRODUCT_PACKAGES += \
     fakelogprint \
     libshims_gxfpd
 
+# Net
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.0 \
+    netutils-wrapper-1.0
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
