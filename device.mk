@@ -52,9 +52,5 @@ PRODUCT_PACKAGES += \
     init.goodix.sh \
     init.device.rc
 
-# Touch HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_8953
-
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/mido/mido-vendor.mk)
