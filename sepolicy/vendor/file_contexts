@@ -1,3 +1,6 @@
+# Camera
+/data/vendor/qcam(/.*)?                         u:object_r:vendor_camera_data_file:s0
+
 # Goodix
 /data/system/fingerprint(/.*)?                  u:object_r:gx_fpd_data_file:s0
 /(vendor|system/vendor)/bin/gx_fpd              u:object_r:gx_fpd_exec:s0
